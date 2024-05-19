@@ -1,0 +1,16 @@
+{{if .IsOpenAPI}}{{range $fname := .ExternalCollectionNames}}
+[{{$fname}}]({{$fname}})
+{{end}}{{end}}
+{{if ne .Description ""}}
+## {{.Description}}
+{{end}}
+[(GitHub)]({{.ProjectUrl}}) Documentação {{.CollectionName}} não oficial da API da Omie
+
+
+## Atenção
+
+{{if .IsOpenAPI}}
+* Todo endpoint nessa documentação utiliza URL Fragments (`#` no final do endpoint), a fim de desviar do problema de endpoints duplicados sendo definidos no {{.CollectionName}} (mais informações [aqui](https://github.com/OAI/OpenAPI-Specification/issues/1635)), isso não deve ser transferido para o servidor por padrão, mas considere remover eles em sua aplicação.
+
+{{end}}
+* Preencha os campos `{{"{{appKey}}"}}` e `{{"{{appSecret}}"}}` com os valores da sua conta

@@ -1,0 +1,106 @@
+[
+  {
+    "EntityName": "Entity1",
+    "Name": "PageName",
+    "DocsUrl": "https://example.com/base/version1/directory/to/file/",
+    "Endpoint": "directory/to/file",
+    "BaseUrl": "https://example.com/base/version1",
+    "FullUrl": "https://example.com/base/version1/directory/to/file/",
+    "BasePath": "base",
+    "ApiVersion": "version1",
+    "Methods": [
+      {
+        "Name": "Method1",
+        "Description": "",
+        "Parameter": "model1",
+        "Return": "model1",
+        "Example": { "hello": "world", "x": 42 },
+        "IsDeprecated": false
+      }
+    ],
+    "Models": [
+      {
+        "Name": "model1",
+        "Fields": [
+          {
+            "Name": "field1",
+            "Tooltip": "Field1 ToolTip",
+            "Type": 0,
+            "IsRequired": false,
+            "TypeName": "string",
+            "ElementType": "",
+            "Length": 42,
+            "Description": "Field1 Description",
+            "IsDeprecated": false
+          },
+          {
+            "Name": "field2",
+            "Tooltip": "",
+            "Type": 1,
+            "IsRequired": false,
+            "TypeName": "integer",
+            "ElementType": "",
+            "Length": 0,
+            "Description": "Field2 Description",
+            "IsDeprecated": false
+          },
+          {
+            "Name": "field3",
+            "Tooltip": "",
+            "Type": 2,
+            "IsRequired": false,
+            "TypeName": "text",
+            "ElementType": "",
+            "Length": 0,
+            "Description": "",
+            "IsDeprecated": false
+          },
+          {
+            "Name": "field4",
+            "Tooltip": "",
+            "Type": 3,
+            "IsRequired": false,
+            "TypeName": "decimal",
+            "ElementType": "",
+            "Length": 0,
+            "Description": "",
+            "IsDeprecated": false
+          },
+          {
+            "Name": "field5",
+            "Tooltip": "",
+            "Type": 4,
+            "IsRequired": false,
+            "TypeName": "boolean",
+            "ElementType": "",
+            "Length": 0,
+            "Description": "",
+            "IsDeprecated": false
+          },
+          {
+            "Name": "field6",
+            "Tooltip": "",
+            "Type": 5,
+            "IsRequired": false,
+            "TypeName": "model1",
+            "ElementType": "",
+            "Length": 0,
+            "Description": "",
+            "IsDeprecated": false
+          },
+          {
+            "Name": "field7",
+            "Tooltip": "",
+            "Type": 6,
+            "IsRequired": false,
+            "TypeName": "model1Array",
+            "ElementType": "model1",
+            "Length": 0,
+            "Description": "",
+            "IsDeprecated": false
+          }
+        ]
+      }
+    ]
+  }
+]

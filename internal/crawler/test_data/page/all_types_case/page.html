@@ -1,0 +1,114 @@
+<html>
+  <body>
+    <div class="jumbotron banner bg-azul">
+      <div class="col-12">
+        <h1>PageName</h1>
+        <div>
+          <div>
+            <h4></h4>
+            <a
+              class="highlight"
+              href="https://example.com/base/version1/directory/to/file/"
+            >
+              <pre><code>https://example.com/base/version1/directory/to/file/</code></pre>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9">
+        <div class="methodItem">
+          <h3 class="method-name">Method1</h3>
+          <div class="panel panel-default method">
+            <table class="table table-condensed table-hover">
+              <tr>
+                <td></td>
+                <td class="method-parameter-type"><a href="#model1"></a></td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="panel-footer">
+              <span class="pre"><a href="#model2"></a></span>
+            </div>
+          </div>
+          <div class="method-example-area">
+            <pre class="method-example-code">{"hello": "world", "x": 42}</pre>
+          </div>
+        </div>
+        <div class="complexTypeItem">
+          <a name="model1"></a>
+          <h3></h3>
+          <p>Model description.</p>
+          <table class="table table-hover table-condensed">
+            <tr>
+              <td class="parameter-name parameter-optional">field1</td>
+              <td class="parameter-type">
+                string<span class="parameter-lenght">42</span>
+              </td>
+              <td class="parameter-docs">
+                <div class="first">Field1 Description</div>
+                <div class="more">
+                  <div>Field1 ToolTip</div>
+                </div>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+              <td class="parameter-name parameter-optional">field2</td>
+              <td class="parameter-type">integer</td>
+              <td class="parameter-docs">
+                <div class="first">Field2 Description</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="parameter-name parameter-optional">field3</td>
+              <td class="parameter-type">text</td>
+              <td class="parameter-docs">
+                <div class="first"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="parameter-name parameter-optional">field4</td>
+              <td class="parameter-type">decimal</td>
+              <td class="parameter-docs">
+                <div class="first"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="parameter-name parameter-optional">field5</td>
+              <td class="parameter-type">boolean</td>
+              <td class="parameter-docs">
+                <div class="first"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="parameter-name parameter-optional">field6</td>
+              <td class="parameter-type"><a href="#model1">model1</a></td>
+              <td class="parameter-docs">
+                <div class="first"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="parameter-name parameter-optional">field7</td>
+              <td class="parameter-type">model1Array</td>
+              <td class="parameter-docs">
+                <div class="first"></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="complexTypeItem">
+          <a name="model1Array"></a>
+          <h3></h3>
+          <p>Model 1 Array</p>
+          <table class="table table-hover table-condensed">
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

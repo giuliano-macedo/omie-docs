@@ -1,0 +1,38 @@
+{
+  "EntityName": "",
+  "Name": "PageName",
+  "DocsUrl": "",
+  "Endpoint": "directory/to/file",
+  "BaseUrl": "https://example.com/base/version1",
+  "FullUrl": "https://example.com/base/version1/directory/to/file/",
+  "BasePath": "base",
+  "ApiVersion": "version1",
+  "Methods": [
+    {
+      "Name": "Method1",
+      "Description": "DEPRECATED",
+      "Parameter": "model1",
+      "Return": "model2",
+      "Example": { "hello": "world", "x": 42 },
+      "IsDeprecated": true
+    }
+  ],
+  "Models": [
+    {
+      "Name": "model1",
+      "Fields": [
+        {
+          "Name": "field1",
+          "Tooltip": "Field1 ToolTip",
+          "Type": 0,
+          "IsRequired": false,
+          "TypeName": "string",
+          "ElementType": "",
+          "Length": 42,
+          "Description": "DEPRECATED",
+          "IsDeprecated": true
+        }
+      ]
+    }
+  ]
+}

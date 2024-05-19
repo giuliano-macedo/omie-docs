@@ -1,0 +1,45 @@
+{
+  "DocsUrl": "https://example.com/list-of-apis/",
+  "Features": [
+    {
+      "Name": "Feature1",
+      "Description": "Feature Description",
+      "MainEntities": [
+        {
+          "Name": "Entity1",
+          "Description": "Description",
+          "Version": "version1",
+          "Url": "https://example.com.br/page1"
+        }
+      ],
+      "AuxiliaryEntites": [
+        {
+          "Name": "Entity2",
+          "Description": "Description",
+          "Version": "version1",
+          "Url": "https://example.com.br/page2"
+        }
+      ]
+    },
+    {
+      "Name": "Feature2",
+      "Description": "Feature Description",
+      "MainEntities": [
+        {
+          "Name": "Entity3",
+          "Description": "Description",
+          "Version": "version1",
+          "Url": "https://example.com.br/page1"
+        }
+      ],
+      "AuxiliaryEntites": [
+        {
+          "Name": "Entity4",
+          "Description": "Description",
+          "Version": "version1",
+          "Url": "https://example.com.br/page2"
+        }
+      ]
+    }
+  ]
+}

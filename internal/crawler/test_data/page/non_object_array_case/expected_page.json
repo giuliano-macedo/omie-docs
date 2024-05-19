@@ -1,0 +1,29 @@
+{
+  "EntityName": "",
+  "Name": "PageName",
+  "DocsUrl": "",
+  "Endpoint": "directory/to/file",
+  "BaseUrl": "https://example.com/base/version1",
+  "FullUrl": "https://example.com/base/version1/directory/to/file/",
+  "BasePath": "base",
+  "ApiVersion": "version1",
+  "Methods": null,
+  "Models": [
+    {
+      "Name": "model1",
+      "Fields": [
+          {
+            "Name": "field1",
+            "Tooltip": "",
+            "Type": 6,
+            "IsRequired": false,
+            "TypeName": "integerArray",
+            "ElementType": "integer",
+            "Length": 0,
+            "Description": "",
+            "IsDeprecated": false
+          }
+      ]
+    }
+  ]
+}

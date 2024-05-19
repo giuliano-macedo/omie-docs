@@ -1,0 +1,107 @@
+{
+  "EntityName": "",
+  "Name": "Missing Fields",
+  "DocsUrl": "",
+  "Endpoint": "directory/to/file",
+  "BaseUrl": "https://example.com/base/version1",
+  "FullUrl": "https://example.com/base/version1/directory/to/file/",
+  "BasePath": "base",
+  "ApiVersion": "version1",
+  "Methods": [
+    {
+      "Name": "",
+      "Description": "No Name",
+      "Parameter": "model1",
+      "Return": "model2",
+      "Example": { "hello": "world", "x": 42 },
+      "IsDeprecated": false
+    },
+    {
+      "Name": "NoExample",
+      "Description": "Method description",
+      "Parameter": "model1",
+      "Return": "model2",
+      "Example": null,
+      "IsDeprecated": false
+    },
+    {
+      "Name": "NoDescription",
+      "Description": "",
+      "Parameter": "model1",
+      "Return": "model2",
+      "Example": { "hello": "world", "x": 42 },
+      "IsDeprecated": false
+    },
+    {
+      "Name": "NoParameter",
+      "Description": "Method description",
+      "Parameter": "",
+      "Return": "model2",
+      "Example": { "hello": "world", "x": 42 },
+      "IsDeprecated": false
+    },
+    {
+      "Name": "NoReturn",
+      "Description": "Method description",
+      "Parameter": "model1",
+      "Return": "",
+      "Example": { "hello": "world", "x": 42 },
+      "IsDeprecated": false
+    }
+  ],
+  "Models": [
+    {
+      "Name": "model1",
+      "Fields": [
+        {
+          "Name": "",
+          "Tooltip": "Field1 ToolTip",
+          "Type": 0,
+          "IsRequired": false,
+          "TypeName": "string",
+          "ElementType": "",
+          "Length": 42,
+          "Description": "No Name",
+          "IsDeprecated": false
+        },
+        {
+          "Name": "No Description",
+          "Tooltip": "Field1 ToolTip",
+          "Type": 0,
+          "IsRequired": false,
+          "TypeName": "string",
+          "ElementType": "",
+          "Length": 42,
+          "Description": "",
+          "IsDeprecated": false
+        },
+        {
+          "Name": "No Type",
+          "Tooltip": "Field1 ToolTip",
+          "Type": 0,
+          "IsRequired": false,
+          "TypeName": "",
+          "ElementType": "",
+          "Length": 0,
+          "Description": "Field1 Description",
+          "IsDeprecated": false
+        },
+        {
+          "Name": "No Docs",
+          "Tooltip": "",
+          "Type": 0,
+          "IsRequired": false,
+          "TypeName": "string",
+          "ElementType": "",
+          "Length": 42,
+          "Description": "",
+          "IsDeprecated": false
+        }
+      ]
+    },
+    {
+      "Name": "No Table",
+      "Fields": null
+    }
+  ]
+}

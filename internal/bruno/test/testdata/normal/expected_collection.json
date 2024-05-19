@@ -1,0 +1,59 @@
+{
+  "name": "",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "Feature1",
+      "items": [
+        {
+          "type": "folder",
+          "name": "Entity1",
+          "items": [
+            {
+              "type": "http-request",
+              "name": "Method1",
+              "request": {
+                "url": "{{baseUrl}}/directory/to/file/",
+                "method": "POST",
+                "headers": [{ "name": "Content-Type", "value": "application/json", "enabled": true }],
+                "body": {
+                  "mode": "json",
+                  "json": "{\n    \"app_key\": \"{{appKey}}\",\n    \"app_secret\": \"{{appSecret}}\",\n    \"call\": \"Method1\",\n    \"param\": [\n        {\n            \"hello\": \"world\",\n            \"x\": 42\n        }\n    ]\n}",
+                  "formUrlEncoded": null,
+                  "multipartForm": null
+                },
+                "auth": { "mode": "none", "basic": { "username": "", "password": "" }, "bearer": { "token": "" } },
+                "script": {},
+                "vars": {},
+                "assertions": null,
+                "tests": "",
+                "docs": "[Documentação original](https://example.com/base/version1/directory/to/file/)\n\n## Entity1\n\n\n",
+                "params": []
+              }
+            }
+          ]
+        },
+        { "type": "folder", "name": "Cadastros Auxiliares", "items": [] }
+      ]
+    }
+  ],
+  "activeEnvironmentUid": "17b03cda7f1d4b1caf12f",
+  "environments": [
+    {
+      "uid": "17b03cda7f1d4b1caf12f",
+      "name": "Default",
+      "variables": [
+        {
+          "name": "baseUrl",
+          "value": "https://example.com/base/version1",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        { "name": "appKey", "value": "", "enabled": true, "secret": true, "type": "text" },
+        { "name": "appSecret", "value": "", "enabled": true, "secret": true, "type": "text" }
+      ]
+    }
+  ]
+}

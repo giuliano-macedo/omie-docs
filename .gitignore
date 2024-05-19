@@ -1,0 +1,8 @@
+/bundle
+/bin
+/cache
+/types_dump
+/integration_test_data/bundle
+/cover.out
+/cover.html
+/cover_report.out

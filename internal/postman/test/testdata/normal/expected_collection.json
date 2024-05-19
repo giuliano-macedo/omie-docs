@@ -1,0 +1,72 @@
+{
+  "info": {
+    "name": "",
+    "description": { "type": "text/markdown" },
+    "version": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Feature1",
+      "description": { "content": "Feature Description", "type": "text/markdown" },
+      "item": [
+        {
+          "name": "Entity1",
+          "description": {
+            "content": "## Entity1\n\n[Documentação original](https://example.com/base/version1/directory/to/file/)\nDescription",
+            "type": "text/markdown"
+          },
+          "item": [
+            {
+              "name": "Method1",
+              "description": "",
+              "request": {
+                "url": {
+                  "raw": "{{baseUrl}}/directory/to/file/",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["directory/to/file", ""]
+                },
+                "method": "POST",
+                "description": "",
+                "header": [{ "key": "Content-Type", "value": "application/json" }],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"app_key\": \"{{appKey}}\",\n    \"app_secret\": \"{{appSecret}}\",\n    \"call\": \"Method1\",\n    \"param\": [\n        {\n            \"hello\": \"world\",\n            \"x\": 42\n        }\n    ]\n}"
+                }
+              },
+              "response": [
+                {
+                  "originalRequest": {
+                    "url": {
+                      "raw": "{{baseUrl}}/directory/to/file/",
+                      "host": ["{{baseUrl}}"],
+                      "path": ["directory/to/file", ""]
+                    },
+                    "method": "POST",
+                    "description": "",
+                    "header": [{ "key": "Content-Type", "value": "application/json" }],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"app_key\": \"{{appKey}}\",\n    \"app_secret\": \"{{appSecret}}\",\n    \"call\": \"Method1\",\n    \"param\": [\n        {\n            \"hello\": \"world\",\n            \"x\": 42\n        }\n    ]\n}"
+                    }
+                  },
+                  "name": "Exemplo de resposta",
+                  "header": [{ "key": "Content-Type", "value": "application/json" }],
+                  "body": "{\n    \"field1\": \"string\"\n}",
+                  "status": "OK",
+                  "code": 200
+                }
+              ]
+            }
+          ]
+        },
+        { "name": "Cadastros Auxiliares", "item": [] }
+      ]
+    }
+  ],
+  "variable": [
+    { "id": "baseUrl", "type": "string", "name": "baseUrl", "value": "https://example.com/base/version1" },
+    { "id": "appKey", "type": "string", "name": "appKey" },
+    { "id": "appSecret", "type": "string", "name": "appSecret" }
+  ]
+}

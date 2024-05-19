@@ -1,0 +1,28 @@
+version: "3"
+
+tasks:
+  build:
+    cmds:
+      - go build -o bin/generate_docs cmd/generate_docs/main.go
+
+  run:
+    cmds:
+      - go run cmd/generate_docs/main.go -caching_dir cache
+
+  serve:
+    cmds:
+      - go run cmd/serve/main.go
+
+  integration_tests:
+    cmds:
+      - go test --tags="integration" internal/generate_docs/main_test.go
+
+  unit_tests:
+    cmds:
+      - go test -coverprofile cover.out -coverpkg=./... ./...
+      - go tool cover -func=cover.out -o=cover_report.out
+      - cat cover_report.out
+
+  coverage_html:
+    cmds:
+      - go tool cover -html cover.out -o cover.html

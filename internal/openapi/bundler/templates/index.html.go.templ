@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{.Description}}" />
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href=" {{.Css }}" />
+    <link rel="icon" type="image/png" href="{{ .Icon32 }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ .Icon16 }}" sizes="16x16"/>
+  </head>
+  <body style="margin: 0">
+    <div id="swagger-ui"></div>
+    <script src="{{ .JsBundle }}" crossorigin></script>
+    <script src="{{ .JsPreset }}" crossorigin></script>
+    <script id="swaggerUrls"> {{.SwaggerUrls}} </script>
+    <script> {{.MainJs}} </script>
+  </body>
+</html>

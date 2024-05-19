@@ -1,0 +1,113 @@
+{
+  "components": {
+    "schemas": {
+      "directory.to.file.model1": {
+        "properties": {
+          "field1": {
+            "description": "Field1 Description",
+            "maxLength": 42,
+            "title": "field1",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Documentação original das APIs",
+    "url": "https://example.com/list-of-apis/"
+  },
+  "info": {
+    "title": "Omie OpenApi - Feature1",
+    "version": "0"
+  },
+  "openapi": "3.0.3",
+  "paths": {
+    "/directory/to/file/#Method1": {
+      "post": {
+        "deprecated": false,
+        "description": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "app_key": {
+                    "example": "{{appKey}}",
+                    "title": "app_key",
+                    "type": "string"
+                  },
+                  "app_secret": {
+                    "example": "{{appSecret}}",
+                    "title": "app_secret",
+                    "type": "string"
+                  },
+                  "call": {
+                    "enum": [
+                      "Method1"
+                    ],
+                    "title": "call",
+                    "type": "string"
+                  },
+                  "param": {
+                    "example": [
+                      {
+                        "hello": "world",
+                        "x": 42
+                      }
+                    ],
+                    "items": {
+                      "$ref": "#/components/schemas/directory.to.file.model1"
+                    },
+                    "title": "param",
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "app_key",
+                  "app_secret",
+                  "call",
+                  "param"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Não documentado",
+                  "type": "string"
+                }
+              }
+            },
+            "description": ""
+          }
+        },
+        "tags": [
+          "Entity1"
+        ]
+      }
+    }
+  },
+  "servers": [
+    {
+      "description": "Servidor de produção",
+      "url": "https://example.com/base/version1"
+    }
+  ],
+  "tags": [
+    {
+      "description": "Description",
+      "externalDocs": {
+        "description": "Documentação original",
+        "url": "https://example.com/base/version1/directory/to/file/"
+      },
+      "name": "Entity1"
+    }
+  ]
+}
